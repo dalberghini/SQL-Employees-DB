@@ -8,7 +8,7 @@ select first_name, last_name, hire_date from "Employees" as e
 where hire_date >= '1986-01-01'
 and hire_date <='1986-12-31';
 
-create view department_mangaers as 
+create view department_managers as 
 select de.dept_no, d.dept_name, e.emp_no, e.first_name, e.last_name from "Employees" as e
 join "Dept_Managers" as de
 on (e.emp_no = de.emp_no)
