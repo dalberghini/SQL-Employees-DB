@@ -34,7 +34,7 @@ on (de.emp_no = e.emp_no)
 join "Departments" as d
 on (d.dept_no = de.dept_no)
 where de.dept_no = 'd005'
-or de.dept_no = 'd007'
+or de.dept_no = 'd007';
 
 create view last_name_count as 
 select e.last_name, count(e.last_name) from "Employees" as e

@@ -4,7 +4,7 @@
 
 
 CREATE TABLE "Departments" (
-    "Dept_no" varchar   NOT NULL,
+    "dept_no" varchar   NOT NULL,
     "dept_name" varchar   NOT NULL,
     CONSTRAINT "pk_Departments" PRIMARY KEY (
         "Dept_no"
