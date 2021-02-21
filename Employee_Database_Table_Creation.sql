@@ -7,7 +7,7 @@ CREATE TABLE "Departments" (
     "dept_no" varchar   NOT NULL,
     "dept_name" varchar   NOT NULL,
     CONSTRAINT "pk_Departments" PRIMARY KEY (
-        "Dept_no"
+        "dept_no"
      )
 );
 
@@ -51,10 +51,10 @@ ALTER TABLE "Dept_employees" ADD CONSTRAINT "fk_Dept_employees_emp_no" FOREIGN K
 REFERENCES "Employees" ("emp_no");
 
 ALTER TABLE "Dept_employees" ADD CONSTRAINT "fk_Dept_employees_dept_no" FOREIGN KEY("dept_no")
-REFERENCES "Departments" ("Dept_no");
+REFERENCES "Departments" ("dept_no");
 
 ALTER TABLE "Dept_Managers" ADD CONSTRAINT "fk_Dept_Managers_dept_no" FOREIGN KEY("dept_no")
-REFERENCES "Departments" ("Dept_no");
+REFERENCES "Departments" ("dept_no");
 
 ALTER TABLE "Dept_Managers" ADD CONSTRAINT "fk_Dept_Managers_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "Employees" ("emp_no");
